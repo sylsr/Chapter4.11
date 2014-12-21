@@ -5,15 +5,18 @@ public class Project
 
 	public static void main(String[] args)
 	{
-		char start='\u0021';
-		int y=32;
-		int x;
-		while(y<126)
+		final int MIN = 32;
+		final int MAX = 126;
+		final int PER_LINE = 5;
+		int count = 0;
+		for (int chValue = MIN; chValue <= MAX; chValue++)
 		{
-			for (x=20;x<)
-			y++;
+		System.out.println(chValue + " " + (char)chValue+ "\t");
+		count++;
+		if (count % PER_LINE == 0)
+		System.out.println();
 		}
-		System.out.print(start);
+
 
 	}
 
